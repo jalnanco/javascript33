@@ -55,10 +55,11 @@
 내부 함수에서 반환 시 상태가 그대로 반환된다. 반환 후에도 외부 함수 내 변수 접근이 가능하다.
 사이드 이펙트를 관리하거나 프라이빗 변수 용도로 사용한다.
 
-## 7. E**xpression vs Statement**
+## 7.**Expression vs Statement**
 
-* 함수선언은 function으로 시작하며 Hoisting(선언이 먼저 그 후 로직 진행)이 적용된다.
-* 변수에 대입한 함수 또는 즉시 실행 함수는 function expression으로 사용되어 Hoisting적용이 다르다.
+* Expression은 리턴값이 있음, Statement는 없음 (if, function)
+* function으로 시작 시 Hoisting(선언이 먼저 그 후 로직 진행)이 적용된다.
+* 변수에 대입한 함수 또는 즉시 실행 함수는 function expression으로 not defined상태로 순서적용을 받는다.(즉, Hoisting적용이 다르다)
 
 ## 8.**IIFE,  Module,  Namespace**
 
