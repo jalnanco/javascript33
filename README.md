@@ -55,3 +55,19 @@
 내부 함수에서 반환 시 상태가 그대로 반환된다. 반환 후에도 외부 함수 내 변수 접근이 가능하다.
 사이드 이펙트를 관리하거나 프라이빗 변수 용도로 사용한다.
 
+## 7. E**xpression vs Statement**
+
+* 함수선언은 function으로 시작하며 Hoisting(선언이 먼저 그 후 로직 진행)이 적용된다.
+* 변수에 대입한 함수 또는 즉시 실행 함수는 function expression으로 사용되어 Hoisting적용이 다르다.
+
+## 8.**IIFE,  Module,  Namespace**
+
+* IFFE는 즉시 실행함수로 클로저를 사용하여 상태와 구조를 캡슐화시켜 private 하게 만들수 있다.
+* ObjectLiterals는 CurryBrace 안에 콤마와 구분되는 키 값을 배치하여 리턴하고 모듈패턴으로 사용된다.
+* Export/Import로 GlobalScope를 어지럽히지 않고 사용이 가능하다
+
+## 9.**메시지큐와 이벤트 루프 Message Queue andevent loop**
+
+* SetTimer로 A함수 호출 시 콜 스택에서 시작해 브라우저에 의해 실행된 다음 메시지큐에서 대기하고 이벤트루프에 의해서 다시 콜스택으로 A함수가 추가된다.
+* Promise는 micro task에 의해 관리되면 SetTimer보다 대부분 브라우저에서 우선 작업된다.
+
