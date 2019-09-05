@@ -72,3 +72,22 @@
 * SetTimer로 A함수 호출 시 콜 스택에서 시작해 브라우저에 의해 실행된 다음 메시지큐에서 대기하고 이벤트루프에 의해서 다시 콜스택으로 A함수가 추가된다.
 * Promise는 micro task에 의해 관리되면 SetTimer보다 대부분 브라우저에서 우선 작업된다.
 
+## 10.**setTimer,  setInterval, requestAnimationFrame**
+
+* setTimer는 한 번만,  setInterval은 주기적으로 호출할 때 사용한다.
+* requestAnimationFrame 은 브라우저 최적화 애니메이션 용도이다
+
+## 11.**자바스크립트 엔진**
+
+* 자바스크립트를 읽고 실행할 수 있으면 자바스크립트 엔진이다. (Rhino,  JavaScriptCore,  V8등..)
+* 구글의 V8 엔진은 C++ 로 되어 있다.
+* JS를 ByteCode로,  ByteCode를 Machine Code로 변환한다.
+
+(--print bytecode 옵션으로Node 실행 시 확인가능)
+
+## 12.**비트연산자, 형식화배열,  버퍼(배열) Bitwise Operators, Type Arrays and Away Buffers**
+
+* right shift
+* '>>' : 왼쪽부터 추가 (1로 시작하는 경우 1로,  0으로 시작하는 경우 0으로 채움,  음수 일 경우 확인 가능)
+* '>>>' : 0으로 채움
+
