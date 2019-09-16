@@ -91,3 +91,26 @@
 * '>>' : 왼쪽부터 추가 (1로 시작하는 경우 1로,  0으로 시작하는 경우 0으로 채움,  음수 일 경우 확인 가능)
 * '>>>' : 0으로 채움
 
+## 13.**DOM과 LayoutTrees**
+
+* DocumentObjectModel: HTML을 위한 인터페이스
+* JavaScript can manipulate the DOM
+
+## 14.**Factories and Classes**
+
+* extend,  super 키워드 알아두기
+* New 키워드 사용 시
+  + 빈 오브젝트 생성
+  + prototype으로 할당
+  + 따라서 리턴 값이 primitive가 아니면 해당없음
+
+추가 1) function expression을 class와 유사하게 사용하는 예제들 예) .prototype.(method명) = 함수
+
+추가 2) 클래스 static method는 New 없이 사용가능
+
+## 15.**This, Call,  Apply,  Bind**
+
+* call() - method sets the "this"
+* apply() - Call과 유사하지만 2번째 인자로 배열을 받음
+* bind () - Call 과 유사하지만 인자를 안받음
+
