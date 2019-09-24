@@ -112,5 +112,17 @@
 
 * call() - method sets the "this"
 * apply() - Call과 유사하지만 2번째 인자로 배열을 받음
-* bind () - Call 과 유사하지만 인자를 안받음
+* bind() - Call 과 유사하지만 인자를 안받음
+
+## 16.**New,  Constructor,  Instance of and Instances**
+
+* new 키워드는 빈 오브젝트를 생성하고 this를 bind 해준 다음__proto__를 함수의 프로토타입에연결 후 this를 리턴해준다.
+
+## 17.**Prototype Inheritance and Prototype chain**
+
+* prototype은 공유된다.this가 먼저 그 다음 prototype에서 properties 를 찾는다
+
+## 18.**Object.create and Object.assign**
+
+* create는 construct를 거치지 않고 생성할때 사용한다.
 
